@@ -15,7 +15,8 @@ namespace paujo.Debug {
             Warning,
             Error,
             Trace,
-            Debug
+            Debug,
+            Load
         }
 
 
@@ -84,6 +85,7 @@ namespace paujo.Debug {
         public void Error(string message) => Log(LogTag.Error, message);
         public void Trace(string message) => Log(LogTag.Trace, message);
         public void Debug(string message) => Log(LogTag.Debug, message);
+        public void Load(string message) =>Log(LogTag.Load, message);
 
 
         public void Log(LogTag tag, string message) {
